@@ -6,7 +6,13 @@
 <script>
  
    var referrer =  document.referrer;
-alert(referrer); 
+console.log(referrer); 
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const rUrl = urlParams.get('rUrl');
+console.log(rUrl);
+
+Xwindow.location.replace(referrer + rUrl);
 </script>
  
 </head>
