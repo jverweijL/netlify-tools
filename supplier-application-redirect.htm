@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- This file is used for the supplier portal, think TWICE before removing!!! -->
+<script>
+ 
+   var referrer =  document.referrer;
+   console.log(referrer); 
+   
+   setTimeout(function () {
+        window.location.replace(referrer + "group/supplier-portal/dashboard");
+    }, 5000);
+</script>
+ 
+</head>
+<body>
+... redirect in 5 seconds
+</body>
+</html>
